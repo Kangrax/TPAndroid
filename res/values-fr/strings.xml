@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TPAndroid</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="hello_world">Coucou!</string>
+    <string name="title_activity_ajout_contact">Ajout de contact</string>
+    
+        <!--  Main Activity Buttons  -->
+    <string name="red_button_text">Ajout de contact</string>
+	<string name="blue_button_text">Répertoire</string>
+    
+    
+</resources>
