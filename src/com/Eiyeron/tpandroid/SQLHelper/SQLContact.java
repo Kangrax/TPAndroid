@@ -1,28 +1,38 @@
 package com.Eiyeron.tpandroid.SQLHelper;
 
-import java.io.Serializable;
-
-public class SQLContact implements Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	
-	
+public class SQLContact {
 	private long id;
 	private String first_name;
 	private String last_name;
 	private String phone_number;
+	private String mail;
+	private String label;
+	private String address;
+	private String picture;
 
 	public SQLContact(long id, String first_name, String last_name,
-			String phone_number) {
+			String phone_number, String mail, String address, String label, String picture) {
 		super();
 		this.id = id;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.phone_number = phone_number;
+		this.mail = mail;
+		this.address=address;
+		this.label=label;
+		this.picture=picture;
 	}
 
+	public long getId()
+	{
+		return id;
+	}
+	
+	public void setId(long id)
+	{
+		this.id=id;
+	}
+	
 	public String getFirst_name() {
 		return first_name;
 	}
@@ -47,47 +57,42 @@ public class SQLContact implements Serializable {
 		this.phone_number = phone_number;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result
-				+ ((first_name == null) ? 0 : first_name.hashCode());
-		result = prime * result + (int) (id ^ (id >>> 32));
-		result = prime * result
-				+ ((last_name == null) ? 0 : last_name.hashCode());
-		result = prime * result
-				+ ((phone_number == null) ? 0 : phone_number.hashCode());
-		return result;
+	public String getMail() {
+		return mail;
 	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		SQLContact other = (SQLContact) obj;
-		if (first_name == null) {
-			if (other.first_name != null)
-				return false;
-		} else if (!first_name.equals(other.first_name))
-			return false;
-		if (id != other.id)
-			return false;
-		if (last_name == null) {
-			if (other.last_name != null)
-				return false;
-		} else if (!last_name.equals(other.last_name))
-			return false;
-		if (phone_number == null) {
-			if (other.phone_number != null)
-				return false;
-		} else if (!phone_number.equals(other.phone_number))
-			return false;
-		return true;
+	
+	public void setMail(String mail)
+	{
+		this.mail=mail;
 	}
-
+	
+	public String getAddress()
+	{
+		return this.address;
+	}
+	
+	public void setAdress( String adress)
+	{
+		this.address=address;
+	}
+	
+	public String getLabel() {
+		return label;
+	}
+	
+	public void setLabel(String label)
+	{
+		this.label=label;
+	}
+	
+	public String getPicture()
+	{
+		return this.picture;
+	}
+	
+	public void setPicture(String picture)
+	{
+		this.picture=picture;
+	}
+	
 }
