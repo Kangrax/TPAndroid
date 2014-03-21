@@ -1,16 +1,81 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SaloperieDImage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="top"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AjoutContact" >
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.09"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/contact_add_first_name_field"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.99"
+                android:ems="10"
+                android:hint="@string/contact_detail_first_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_add_last_name_field"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.98"
+                android:ems="10"
+                android:hint="@string/contact_detail_last_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_add_phone_number_field"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.98"
+                android:ems="10"
+                android:hint="@string/contact_add_phone_number"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/contact_add_photo"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="addContactPhoto"
+                android:scaleType="center"
+                android:src="@drawable/ic_contact_item_blank_icon" />
+
+            <ImageButton
+                android:id="@+id/ImageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_take_photo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

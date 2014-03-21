@@ -35,24 +35,33 @@ public final class R {
         public static final int blue_button=0x7f020000;
         public static final int green_button=0x7f020001;
         public static final int ic_contact_item_blank_icon=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int red_button=0x7f020004;
-        public static final int yellow_button=0x7f020005;
+        public static final int ic_contact_take_photo=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int red_button=0x7f020005;
+        public static final int yellow_button=0x7f020006;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f090004;
-        public static final int action_settings=0x7f09000c;
-        public static final int blue_button=0x7f090008;
-        public static final int contact_detail_first_name=0x7f090001;
-        public static final int contact_detail_last_name=0x7f090002;
-        public static final int contact_item_icon=0x7f090005;
-        public static final int contact_item_name=0x7f090006;
-        public static final int contact_item_number=0x7f090007;
-        public static final int green_button=0x7f09000a;
-        public static final int imageView1=0x7f090000;
-        public static final int list=0x7f090003;
-        public static final int red_button=0x7f090009;
-        public static final int yellow_button=0x7f09000b;
+        public static final int ImageButton1=0x7f090008;
+        public static final int LinearLayout1=0x7f090006;
+        public static final int LinearLayout2=0x7f090002;
+        public static final int SaloperieDImage=0x7f090000;
+        public static final int action_settings=0x7f090014;
+        public static final int blue_button=0x7f090010;
+        public static final int contact_add_first_name_field=0x7f090003;
+        public static final int contact_add_last_name_field=0x7f090004;
+        public static final int contact_add_phone_number_field=0x7f090005;
+        public static final int contact_add_photo=0x7f090007;
+        public static final int contact_detail_first_name=0x7f09000a;
+        public static final int contact_detail_last_name=0x7f09000b;
+        public static final int contact_item_icon=0x7f09000d;
+        public static final int contact_item_name=0x7f09000e;
+        public static final int contact_item_number=0x7f09000f;
+        public static final int green_button=0x7f090012;
+        public static final int imageView1=0x7f090009;
+        public static final int linearLayout1=0x7f090001;
+        public static final int list=0x7f09000c;
+        public static final int red_button=0x7f090011;
+        public static final int yellow_button=0x7f090013;
     }
     public static final class layout {
         public static final int activity_ajout_contact=0x7f030000;
@@ -71,6 +80,7 @@ public final class R {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int blue_button_text=0x7f060005;
+        public static final int contact_add_phone_number=0x7f06000e;
         public static final int contact_detail_first_name=0x7f06000c;
         public static final int contact_detail_last_name=0x7f06000d;
         public static final int contact_item_name_placeholder=0x7f060009;
