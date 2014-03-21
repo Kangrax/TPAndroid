@@ -64,14 +64,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:onClick="addContactPhoto"
-                android:scaleType="center"
+                android:onClick="addContactPhotoFromGallery"
+                android:scaleType="fitCenter"
                 android:src="@drawable/ic_contact_item_blank_icon" />
 
             <ImageButton
                 android:id="@+id/ImageButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="addContactPhotoFromCamera"
+                android:scaleType="fitCenter"
                 android:src="@drawable/ic_contact_take_photo" />
 
         </LinearLayout>
